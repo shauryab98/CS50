@@ -1,0 +1,15 @@
+0.  Pneumonoultramicroscopicsilicovolcanoconiosis is the longest word in the English language. It means a lung disease caused by inhalation of very fine sand.
+1.  getrusage returns the resource usage measures for a process.
+2.  16
+3.  We pass after and before by reference because the second argument for getrusage must be an address.
+4.  The loop reads one character of the 'text' at a time. If it is an apostrophe or an alphabet, add it to the 'word' array and increment index. 
+    If the string that we are reading is however too long to read, we eat away that string. 
+    If the string has a digit in it, we ignore that string too. Finally, if none of these is true, it must mean that we have found our string. 
+    We terminate the word array with the ascii NULL and check if the word is misspelt. Also, it is here we check our benchmarks.
+5.  fgetc() was used to read words because if we instead used fscanf(), then it would have been difficult to check if our word had a number or if the word was more than the length. 
+6.  Because we don't want that by mistake, we modify the data the 'char*'s point to.
+7.  I used a 'trie' to implement the spell checker. Inside every node, is
+    an array of 28 pointers to 'tries', 27 for a-z and ' and the last one for marking the end of word. IF the last one points to somethin, the word is formed.
+8.  I think my code was quite fast.
+9.  Earlier I was going to use a hash table with nodes, but then I changed it to trie.
+10. Yes, I do. First of all, my data structure takes up a lot of memory. Secondly, valgrind shows a lot of uninitialized variables, which are actually the empty nodes of the trie structre(of course not every permutation of characters will form a word).

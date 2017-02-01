@@ -1,0 +1,1 @@
+These are solutions I wrote to problem sets of Harvard's CS50 course on Edx in early 2014.

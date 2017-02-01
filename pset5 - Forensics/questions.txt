@@ -1,0 +1,23 @@
+0.  BMP(24-bit) - 16.7 million ,JPEG - 16.7 million, GIF - 256, PNG(32-bit)- 4294967296, PNG(24-bit) - 16777216.
+1.  GIF
+2.  In lossy compression, some data is lost, although it is not noticeable to the eye. In lossless compression, there is no such          
+    loss of data.
+3.  JPEG, GIF.
+4.  When a file is deleted on a FAT file system, the system modifies the filename's first character to indicate that it has been  
+    deleted. Then the system moves the clusters of the file to the hard drive's list of free clusters.
+5.  Someone like me can overwrite the deleted file's cluster with ASCII NULL characters or pseudorandom numbers. Also, the hard disk   
+    can be physically destroyed.
+6.  This header file defines a set of integer types that can be used to store data of particular size. For example, the uint8_t   
+    stores 1 byte of data.
+7.  These types allow storing data of fixed width.
+8.  1 BYTE = 1 byte, 1 DWORD = 4 bytes, 1 LONG = 4 bytes, 1 WORD = 2 bytes.
+9.  'b''m'(ascii), 19778(decimal).
+10. 'bfSize' is the size of full image while 'biSize' is the size of BITMAPINFOHEADER(40 bytes).
+11. If biHeight is negative, it means that the image is stored upside up, since BMP files are otherwise usually stored upside down.
+12. biBitCount
+13. fopen might return NULL if the user does not have enough permissions to read the file or the file does not exist for reading.
+14. The third argument is always 1 in fread() because we are always reading 1 'n' byte(s).
+15. 1
+16. fseek is used to move the stream position indicator by a specific amount of bytes.
+17. While using fseek, to move the indicator 'x' bytes, we need to tell fseek the position at which we want to move 'x' bytes. If the position is SEEK_CUR, it means to move 'x' bytes from current position.
+18. milo banana

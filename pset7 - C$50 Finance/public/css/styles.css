@@ -1,0 +1,160 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+/* Portfolio table */
+
+#portfolio_table
+{
+    margin:auto; 
+    width:100%; 
+    text-align:left;  
+}
+
+#portfolio_table tr
+{
+    border-top:1px solid #cccccc;
+    line-height:2;
+}
+#portfolio_table tr:nth-child(2n)
+{
+    background-color:#d4d7fe;
+}
+
+#portfolio_table tr:nth-child(2n+1)
+{
+    background-color:#f9f9f9;
+}
+
+#portfolio_table tr:nth-child(1)
+{
+    font-weight:bold;
+    border-top:none;
+    background-color:#ffffff;    
+}
+
+#portfolio_table tr:last-child
+{
+    border-top:2px solid #cccccc;
+    background-color:#ffffff; 
+    font-weight:900;   
+}
+
+/* history table */
+
+#history_table
+{
+    margin:auto; 
+    width:100%; 
+    text-align:left;  
+}
+
+#history_table tr
+{
+    border-top:1px solid #cccccc;
+    line-height:2;
+}
+#history_table tr:nth-child(2n)
+{
+    background-color:#d4d7fe;
+}
+
+#history_table tr:nth-child(2n+1)
+{
+    background-color:#f9f9f9;
+}
+
+#history_table tr:nth-child(1)
+{
+    font-weight:bold;
+    border-top:none;
+    background-color:#ffffff;    
+}
+
+/* Menu styling*/
+
+#nav_main
+{
+    list-style:none;
+    font-size:12px;    
+    float:left;
+    width:100%;
+    margin:0;
+    margin-bottom:10px;
+    padding:0;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;    
+}
+
+#nav_main > li
+{
+    float:left;
+    position:relative;
+}
+
+#nav_main >li >a
+{
+    float:left;
+    text-decoration:none;
+    padding:11px 18px;
+}
+
+#nav_main #current_page 
+{
+    background:#c0c0c0;
+    color:#ffffff;
+}
+#nav_main #current_page a 
+{
+    color:#ffffff;
+}
+
+#nav_main #current_page:hover
+{
+    background:#336699;
+    color:#ffffff;
+}
+
+#nav_main li:hover
+{
+    background:#336699;
+    color:#ffffff;
+}
+#nav_main li:hover a
+{
+    color:white;
+}
+
+
